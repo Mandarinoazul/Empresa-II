@@ -187,6 +187,11 @@ namespace Login
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void Form_login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 
     

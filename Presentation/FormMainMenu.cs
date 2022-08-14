@@ -4,6 +4,7 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using Dashboard.Forms;
 using FontAwesome.Sharp;
+using Login;
 
 namespace Dashboard
 {
@@ -135,9 +136,15 @@ namespace Dashboard
             result = MessageBox.Show(Message, caption, buttons);
             if (result == System.Windows.Forms.DialogResult.Yes)
             {
-                Application.Exit();
+                this.Hide();
+                Form_login login = new Form_login();
+                login.Show();
 
             }
+            else
+            {
+                
+            };
         }
 
 
