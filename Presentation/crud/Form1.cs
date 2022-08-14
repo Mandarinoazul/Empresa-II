@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Dashboard;
 
 namespace sistemaClientes
 {
@@ -53,6 +54,8 @@ namespace sistemaClientes
         private void Button1_Click(object sender, EventArgs e)
 		{
 			Close();
+            FormMainMenu frmMain = new FormMainMenu();
+            frmMain.Show();
 		}
 
 		private void Button1_MouseEnter(object sender, EventArgs e)

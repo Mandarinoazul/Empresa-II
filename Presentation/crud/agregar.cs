@@ -25,7 +25,7 @@ namespace sistemaClientes
         private void Agregar_Load(object sender, EventArgs e)
         {
             bandera = "NUEVO";
-            txtci.Text = "";
+           
             txtnombres.Text = "";
             txtapellidop.Text = "";
             txtapellidom.Text = "";
@@ -38,19 +38,18 @@ namespace sistemaClientes
             try
             {
                 BasedeDatos x = new BasedeDatos();
-                String ci = txtci.Text;
-                String nombres = txtnombres.Text;
+              
+                String Nombre = txtnombres.Text;
                 String apellidop = txtapellidop.Text;
                 String apellidom = txtapellidom.Text;
-                String cel = txtcel.Text;
-                if (cel == "")
+                String celular = txtcel.Text;
+                if (celular == "")
                 {
-                    cel = "NULL";
+                    celular = "NULL";
                 }
                 if (bandera == "NUEVO")
                 {
-                    x.enviar("insert into empleados values ('" +
-                        ci + "','" + nombres + "','" + apellidop + "','" + apellidom + "'," + cel + ")");
+                    x.enviar("insert into Empleados values ('" + Nombre + "','" + apellidop + "','" + apellidom + "'," + celular + ")");
                     lbagregado.Visible = true;
                     timer1.Start();
                 }
@@ -98,6 +97,11 @@ namespace sistemaClientes
                 timer2.Stop();
                 lbtimer2.Text = "0";
             }
+        }
+
+        private void txtci_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
