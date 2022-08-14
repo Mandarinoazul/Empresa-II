@@ -153,6 +153,16 @@ namespace Presentation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Dan_Max_logo {
+            get {
+                object obj = ResourceManager.GetObject("Dan&Max_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap eliminarempleado {
             get {
                 object obj = ResourceManager.GetObject("eliminarempleado", resourceCulture);

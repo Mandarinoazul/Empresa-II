@@ -94,7 +94,10 @@ namespace Dashboard
 
         private void BtnUtileria_Click(object sender, EventArgs e)
         {
-            Openchildform(new Utileria());
+            Openchildform(new UtileriaForm());
+            
+
+
         }
 
         private void BtnDashboard_Click(object sender, EventArgs e)

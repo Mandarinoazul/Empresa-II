@@ -174,7 +174,7 @@
             this.btnUtileria.Name = "btnUtileria";
             this.btnUtileria.Size = new System.Drawing.Size(275, 73);
             this.btnUtileria.TabIndex = 4;
-            this.btnUtileria.Text = "Utileria";
+            this.btnUtileria.Text = "About us";
             this.btnUtileria.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUtileria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnUtileria.UseVisualStyleBackColor = false;
@@ -264,11 +264,12 @@
             // 
             this.btnHome.BackColor = System.Drawing.Color.Transparent;
             this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnHome.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Help;
+            this.btnHome.Image = global::Presentation.Properties.Resources.Dan_Max_logo;
             this.btnHome.Location = new System.Drawing.Point(3, 3);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(276, 152);
-            this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnHome.Size = new System.Drawing.Size(276, 150);
+            this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnHome.TabIndex = 0;
             this.btnHome.TabStop = false;
             this.btnHome.Click += new System.EventHandler(this.BtnHome_Click);
@@ -277,6 +278,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::Presentation.Properties.Resources.fondito;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.Showpanel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(279, 0);
